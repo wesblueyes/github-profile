@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
 import Avatar from './Avatar'
 import Followers from './Followers'
+import About from './About'
 import 'whatwg-fetch'
+import Bio from './Bio'
+import Repos from './Repos'
+import './App.css'
 
 class App extends Component {
 
   constructor () {
     super()
     this.state = {
-      user: 'ambethia',
+      user: 'wesblueyes',
       userData: {}
     }
   }
@@ -23,8 +27,16 @@ class App extends Component {
 
   render () {
     return <div className='App'>
+    <div className='topAbout'>
       <Avatar id={this.state.userData.id} />
-      <Followers url={this.state.userData.followers_url} />
+      <h1><About name={this.state.userData.name} /></h1>
+      <h2><About location={this.state.userData.location} /></h2>
+      <Bio bio={this.state.userData.bio} />
+      <h2 className='Portfolio'>View Portfolio:</h2><Bio blog={this.state.userData.blog} />
+      </div>
+      <h2><About login={this.state.userData.login} /></h2>
+      <h3>Repository</h3><Repos url={this.state.userData.repos_url} />
+      <h3>Followers</h3><Followers url={this.state.userData.followers_url} />
     </div>
   }
 }

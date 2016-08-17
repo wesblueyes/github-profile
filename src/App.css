@@ -1,0 +1,103 @@
+@import 'https://fonts.googleapis.com/css?family=Tenor+Sans';
+
+#root {
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 5%;
+}
+
+.Avatar {
+float: left;
+padding-right: 20px;
+}
+
+.Avatar img {
+border-radius: 10%;
+}
+
+h1 {
+  font-family: 'Tenor Sans', sans-serif;
+  margin: 5px;
+}
+
+h2 {
+  font-family: 'Tenor Sans', sans-serif;
+  margin: 5px;
+}
+
+h3 {
+  font-family: 'Tenor Sans', sans-serif;
+  background-color: #f3f3f3;
+  padding: 10px;
+  margin-top:0px;
+}
+
+.Bio {
+  display: flex;
+  flex-direction: row;
+}
+
+h2.Portfolio {
+  float: left;
+  padding-right: 5px;
+}
+
+.Bio h2 a {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.Bio h2 a:hover {
+  color: #30839f;
+}
+
+.topAbout {
+  background-color: #add8e6;
+  border-bottom: 5px solid #0d0d0d;
+  border-top: 5px solid #0d0d0d;
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul.Repos {
+  column-count: 5;
+  list-style: none;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+ul.Repos a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+ul.Followers {
+  list-style: none;
+  padding-left: 15px;
+  font-size: 17px;
+}
+
+ul.Followers a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+ul.Followers a:hover, ul.Repos a:hover {
+  color: #add8e6;
+}
+
+.About {
+  margin: 10px;
+  margin-left: 5px;
+}
+
+.About a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #bfbfbf;
+}
+
+.About a:hover {
+    color: #add8e6;
+}
